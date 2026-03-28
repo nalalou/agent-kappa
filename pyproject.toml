@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-kappa"
+version = "0.1.0"
+description = "Measure diversity in multi-agent LLM teams. Predicts whether majority voting will help."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Nora Alalou" }]
+keywords = ["llm", "agents", "ensemble", "diversity", "kappa", "multi-agent"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/nalalou/agent-kappa"
+Documentation = "https://github.com/nalalou/agent-kappa/tree/main/docs"
+
+[project.scripts]
+agent-kappa = "agent_kappa.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
