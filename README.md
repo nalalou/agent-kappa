@@ -105,7 +105,7 @@ Low κ_correct → vote helps. High κ_correct → vote doesn't. In our tests th
 
 ## Prior Art
 
-We didn't invent ensemble diversity metrics — [Kuncheva & Whitaker (2003)](https://link.springer.com/article/10.1023/A:1022859003006) catalogued 10 of them. [LLM-TOPLA (EMNLP 2024)](https://arxiv.org/abs/2410.03953) already applied diversity metrics to LLM ensembles. [Ma et al. (2025)](https://arxiv.org/abs/2506.09046) mapped neural network architecture to agent teams.
+We didn't invent ensemble diversity metrics — [Kuncheva & Whitaker (2003)](https://link.springer.com/article/10.1023/A:1022859003006) catalogued 10 of them. [LLM-TOPLA (EMNLP 2024)](https://arxiv.org/abs/2410.03953) already applied diversity metrics to LLM ensembles. [Ma et al. (2025)](https://arxiv.org/abs/2506.09046) mapped neural network architecture to agent teams. [DiscoUQ (Jiang, 2026)](https://arxiv.org/abs/2603.20975) does structured disagreement analysis for per-question uncertainty — complementary to what we do here (they diagnose individual answers at runtime; we diagnose team composition before deployment).
 
 What didn't exist: a pip package that puts these metrics in the hands of people building with AutoGen, CrewAI, and LangGraph. None of those frameworks measure diversity. This does.
 
