@@ -100,13 +100,13 @@ All local, all reproducible with [Ollama](https://ollama.com).
 | llama3.1:8b | 0.78       | +0.0%      |
 | gemma2:2b   | 0.88       | +4.2%      |
 
-Low κ\_correct → vote helps. High κ\_correct → vote doesn't. In our tests the split fell around 0.4, but this is from 6 data points — run the benchmark yourself.
+Low κ\_correct → vote helps. High κ\_correct → vote doesn't. In our tests the split fell around 0.4, but this is from 6 data points so you should run the benchmark yourself.
 
 ***
 
 ## Prior Art
 
-We didn't invent ensemble diversity metrics — [Kuncheva & Whitaker (2003)](https://link.springer.com/article/10.1023/A:1022859003006) catalogued 10 of them. [LLM-TOPLA (EMNLP 2024)](https://arxiv.org/abs/2410.03953) already applied diversity metrics to LLM ensembles. [Ma et al. (2025)](https://arxiv.org/abs/2506.09046) mapped neural network architecture to agent teams.
+We didn't invent ensemble diversity metrics: [Kuncheva & Whitaker (2003)](https://link.springer.com/article/10.1023/A:1022859003006) catalogued 10 of them. [LLM-TOPLA (EMNLP 2024)](https://arxiv.org/abs/2410.03953) already applied diversity metrics to LLM ensembles, [Ma et al. (2025)](https://arxiv.org/abs/2506.09046) mapped neural network architecture to agent teams.
 
 What didn't exist: a pip package that puts these metrics in the hands of people building with AutoGen, CrewAI, and LangGraph. None of those frameworks measure diversity. This does.
 
