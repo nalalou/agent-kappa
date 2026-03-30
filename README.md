@@ -21,7 +21,7 @@ You have 4 agents. They vote on answers. But if they all fail on the same proble
 
 * **High κ\_correct** → agents fail on the same problems → voting won't help
 
-In our tests across 6 architectures, the split fell around 0.4. Run it on your own models to see where it lands for your use case.
+In our tests across 6 architectures, the split fell around 0.4. Run it on your own  to see where it lands for your use case.
 
 ***
 
