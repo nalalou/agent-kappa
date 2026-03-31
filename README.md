@@ -13,9 +13,9 @@ agent-kappa benchmark --model llama3.2 --pretty
 
 ## The Idea
 
-You have 4 agents. They vote on answers. But if they all fail on the same problems, voting just agrees with the shared mistake.
+You have 4 agents that want to vote on answers. But if they all fail on the same problems, then they all agree with the shared mistake.
 
-`κ_correct` measures that. It's the error correlation between your agents — adapted from [ensemble diversity metrics](https://link.springer.com/article/10.1023/A:1022859003006) (Kuncheva & Whitaker, 2003) for LLM agent teams.
+`κ_correct` can measure the degree of agreement in your team. It's the error correlation between your agents — adapted from [ensemble diversity metrics](https://link.springer.com/article/10.1023/A:1022859003006) (Kuncheva & Whitaker, 2003) for LLM agent teams.
 
 * **Low κ\_correct** → agents fail on different problems → voting helps
 
@@ -54,7 +54,7 @@ AGENT TEAM DIAGNOSIS
   VERDICT: DIVERSE — voting will help
 ```
 
-The `--pretty` flag auto-downloads [gloss](https://github.com/nalalou/gloss) on first run for live progress bars. Works without it too.
+The `--pretty` flag auto-downloads [gloss](https://github.com/nalalou/gloss) on first run for live progress bars.
 
 ***
 
@@ -104,11 +104,11 @@ Low κ\_correct → vote helps. High κ\_correct → vote doesn't. In our tests 
 
 ***
 
-## Prior Art
+## Context
 
 We didn't invent ensemble diversity metrics: [Kuncheva & Whitaker (2003)](https://link.springer.com/article/10.1023/A:1022859003006) catalogued 10 of them. [LLM-TOPLA (EMNLP 2024)](https://arxiv.org/abs/2410.03953) already applied diversity metrics to LLM ensembles, [Ma et al. (2025)](https://arxiv.org/abs/2506.09046) mapped neural network architecture to agent teams, [DiscoUQ (Jiang, 2026)](https://arxiv.org/abs/2603.20975) does structured disagreement analysis for per-question uncertainty which is complementary to what we do here (they diagnose individual answers at runtime; we diagnose team composition before deployment).
 
-What didn't exist: a pip package that puts these metrics in the hands of people building with multi-agent frameworks.
+We are contributing a pip package that puts these metrics in the hands of people building with multi-agent frameworks.
 
 Full landscape: [docs/prior-art.md](docs/prior-art.md)
 
