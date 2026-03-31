@@ -13,7 +13,7 @@ agent-kappa benchmark --model llama3.2 --pretty
 
 ## The Idea
 
-You have 4 agents that want to vote on answers. But if they all fail on the same problems, then they all agree with the shared mistake.
+You have 4 agents that you want are usinf to evaluate the same answer. But if they all fail on the same problems, then they all agree with the shared mistake.
 
 `κ_correct` can measure the degree of agreement in your team. It's the error correlation between your agents — adapted from [ensemble diversity metrics](https://link.springer.com/article/10.1023/A:1022859003006) (Kuncheva & Whitaker, 2003) for LLM agent teams.
 
