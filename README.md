@@ -2,7 +2,7 @@
 
 **Are your agents diverse, or are you paying for clones?**
 
-Agent Kappan measures if majority voting will help your multi-agent team or if you're wasting compute. Run it on your own models, on your own machine, in 10 minutes.
+Agent Kappa measures if majority voting will help your multi-agent team or if you're wasting compute. Run it on your own models, on your own machine, in 10 minutes.
 
 ```bash
 pip install agent-kappa
